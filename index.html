@@ -4,24 +4,26 @@
          <link rel="icon"
         type="image/png"
         href="MacOs.png">
-        <script src="https://meet.jit.si/external_api.js"></script>
+        <script src="external_api.js"></script>
     </head>
-    <body>
+    <body> 
         <center>
-        <img src="MacOS.png" alt="Italian Trulli" width="558" height="447">
-         <h1 style="font-size: xx-large">Mac</h1>
+        <img src="MacOs.png" width="500" height="600">
+        <h1 style="font-size: xxx-large;">Mac</h1>         
         <button id="start" type="start">Create Meeting</button>
         <div id="jitsi-container"></div>
+        <h2>Developed by <a href="https://github.com/Krish-COD">@Bryan</a></h2>
         <script>
             var button = document.querySelector('#start');
-            var container = docume tont.querySelector('#jitsi-container');
+            var container = document.querySelector('#jitsi-container');
             var api = null;
-            <h2 style="font-size:xx-large;">Developed by<a style="color:Black" href="https://github.com/Krish-COD">@Bryan</a></h2>
+
             button.addEventListener('click', () => {
                 var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
                 var stringLength = 30;
                 function pickRandom () {
                     return possible[Math.floor() * possible.length];
+                }
                 var randomString = Array.apply(null,Array(stringLength)).map (pickRandom).join('');
 
                 var domain = "meet.jit.si";
@@ -30,11 +32,9 @@
                     "parentNode": container,
                     "width": 600,
                     "height": 600,
-                     
                 };
                 api = new JitsiMeetExternalAPI(domain, options);
              });
         </script>
-            <h2 style="font-size:large;">Developed by<a style="color:Black" href="https://github.com/Krish-COD">@Bryan</a></h2>
     </body>
 </html>
