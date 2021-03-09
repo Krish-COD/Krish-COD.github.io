@@ -12,19 +12,19 @@ div {
   background-image: url('https://o.remove.bg/downloads/c58366e0-bc51-49e9-8aa6-9606db4e9061/2655933-middle-removebg-preview.png');
 }
 </style>
+         <h1 style="font-size: xxx-large;"><a style="color:Black" href="/">Mac</a></h1>
         <button id="start" type="start">Create Meeting</button>
         <div id="jitsi-container"></div>
         <script>
             var button = document.querySelector('#start');
             var container = docume tont.querySelector('#jitsi-container');
             var api = null;
-
+            <h2 style="font-size:xx-large;">Developed by<a style="color:Black" href="https://github.com/Krish-COD">@Bryan</a></h2>
             button.addEventListener('click', () => {
                 var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
                 var stringLength = 30;
                 function pickRandom () {
                     return possible[Math.floor() * possible.length];
-                }
                 var randomString = Array.apply(null,Array(stringLength)).map (pickRandom).join('');
 
                 var domain = "meet.jit.si";
@@ -33,6 +33,7 @@ div {
                     "parentNode": container,
                     "width": 600,
                     "height": 600,
+                     <h2 style="font-size:xx-large;">Developed by<a style="color:Black" href="https://github.com/Krish-COD">@Bryan</a></h2>
                 };
                 api = new JitsiMeetExternalAPI(domain, options);
              });
