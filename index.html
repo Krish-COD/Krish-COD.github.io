@@ -12,7 +12,7 @@
         <div id="jitsi-container"></div>
         <script>
             var button = document.querySelector('#start');
-            var container = document.querySelector('#jitsi-container');
+            var container = docume tont.querySelector('#jitsi-container');
             var api = null;
 
             button.addEventListener('click', () => {
@@ -27,8 +27,8 @@
                 var options = {
                     "roomName": randomString,
                     "parentNode": container,
-                    "width": 720,
-                    "height": 1280,
+                    "width": 750,
+                    "height": 750,
                 };
                 api = new JitsiMeetExternalAPI(domain, options);
              });
